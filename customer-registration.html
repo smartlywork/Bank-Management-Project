@@ -1,0 +1,100 @@
+<div id="customer-register" class="form-section bg-light">
+    <h2 class="mb-3">Customer Registration</h2>
+    <form id="customerRegistrationForm">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="customerSSN">Customer SSN ID*</label>
+                    <input type="text" class="form-control" id="customerSSN" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerName">Customer Name*</label>
+                    <input type="text" class="form-control" id="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="accountNumber">Account Number*</label>
+                    <input type="text" class="form-control" id="accountNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="ifscCode">IFSC Code*</label>
+                    <input type="text" class="form-control" id="ifscCode" required>
+                </div>
+                <div class="form-group">
+                    <label for="accountBalance">Account Balance*</label>
+                    <input type="number" class="form-control" id="accountBalance" required>
+                </div>
+                <div class="form-group">
+                    <label for="aadhaarNo">Aadhaar Card No.*</label>
+                    <input type="text" class="form-control" id="aadhaarNo" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="panCardNo">PAN Card No.*</label>
+                    <input type="text" class="form-control" id="panCardNo" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth*</label>
+                    <input type="date" class="form-control" id="dob" required>
+                </div>
+                <div class="form-group">
+                    <label>Gender*</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea class="form-control" id="address" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number*</label>
+                    <input type="tel" class="form-control" id="contactNumber" maxlength="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="occupation">Occupation</label>
+                    <input type="text" class="form-control" id="occupation">
+                </div>
+                <div class="form-group">
+                    <label for="employerName">Employer Name</label>
+                    <input type="text" class="form-control" id="employerName">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="employerAddress">Employer Address</label>
+                    <textarea class="form-control" id="employerAddress" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="maritalStatus">Marital Status</label>
+                    <select class="form-control" id="maritalStatus">
+                        <option value="">Select</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group mt-4 text-center">
+            <button type="submit" class="btn btn-primary px-5">Register Customer</button>
+        </div>
+    </form>
+    <div id="customerMessage" class="mt-3 text-center"></div>
+</div>
