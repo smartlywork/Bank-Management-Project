@@ -1,0 +1,54 @@
+<div id="transactions" class="form-section bg-light">
+    <h2 class="mb-3">Transaction Management</h2>
+    <form id="transactionForm">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="transactionId">Transaction ID*</label>
+                    <input type="text" class="form-control" id="transactionId" required>
+                </div>
+                <div class="form-group">
+                    <label for="transCustomerSSN">Customer SSN ID*</label>
+                    <input type="text" class="form-control" id="transCustomerSSN" required>
+                </div>
+                <div class="form-group">
+                    <label for="transCustomerName">Customer Name*</label>
+                    <input type="text" class="form-control" id="transCustomerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="transAccountId">Account ID*</label>
+                    <input type="text" class="form-control" id="transAccountId" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="transAadhaarNo">Aadhaar Card No.*</label>
+                    <input type="text" class="form-control" id="transAadhaarNo" required>
+                </div>
+                <div class="form-group">
+                    <label for="transPanNo">PAN Card No.*</label>
+                    <input type="text" class="form-control" id="transPanNo" required>
+                </div>
+                <div class="form-group">
+                    <label for="transAddress">Address</label>
+                    <textarea class="form-control" id="transAddress" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="modeOfPayment">Mode of Payment*</label>
+                    <select class="form-control" id="modeOfPayment" required>
+                        <option value="">Select</option>
+                        <option value="cash">Cash</option>
+                        <option value="check">Check</option>
+                        <option value="netBanking">Net Banking</option>
+                        <option value="upi">UPI</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group mt-4 text-center">
+            <button type="submit" class="btn btn-primary px-5">Submit Transaction</button>
+        </div>
+    </form>
+    <div id="transactionMessage" class="mt-3 text-center"></div>
+</div>
