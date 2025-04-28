@@ -1,0 +1,154 @@
+/* Common styles for Banking Management System */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.dashboard-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Success and Error Messages */
+.success-message {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive table adjustments */
+@media (max-width: 767px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+    
+    .btn-sm {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Modal styling */
+.modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* Form field required indicator */
+.form-group label::after {
+    content: "*";
+    color: red;
+    margin-left: 3px;
+}
+
+.form-group label:not([for$="Id"]):not([for="email"]):not([for="address"]):not([for="occupation"]):not([for="employerName"]):not([for="employerAddress"]):not([for="maritalStatus"])::after {
+    content: "";
+}
+
+/* Read-only field styling */
+input[readonly] {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+/* Hover effects for buttons */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    transform: translateY(-2px);
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+/* Custom form control styling */
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Navbar active item */
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item .nav-link:hover {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Customer details modal table */
+.details-table {
+    width: 100%;
+}
+
+.details-table td {
+    padding: 8px;
+}
+
+.details-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.details-table .label {
+    font-weight: bold;
+    width: 40%;
+}
